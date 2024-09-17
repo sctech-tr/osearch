@@ -8,8 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Auto-focus the search box
     searchBox.focus();
 
-    // Check if dark mode was previously enabled
-    if (localStorage.getItem('darkMode') === 'enabled') {
+    // Check if dark mode was previously enabled and apply it
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
         body.classList.add('dark-mode');
     }
 
@@ -19,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         searchEngineSelect.value = savedSearchEngine;
     }
 
-    // Toggle dark mode on button click
+    // Toggle dark mode on button click and save the preference
     toggleButton.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
 
@@ -35,15 +36,15 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem('searchEngine', searchEngineSelect.value);
     });
 
-    // Handle the search form submission
+    // Handle the search form submission, open results in the current tab
     searchForm.addEventListener("submit", function(e) {
         e.preventDefault(); // Prevent form submission
         
-        let query = searchBox.value;
-        let engine = searchEngineSelect.value;
+        const query = searchBox.value.trim();
+        const engine = searchEngineSelect.value;
 
         if (query) {
-            let searchUrl = engine + encodeURIComponent(query);
+            const searchUrl = engine + encodeURIComponent(query);
             window.location.href = searchUrl; // Open search results in the current tab
         }
     });
