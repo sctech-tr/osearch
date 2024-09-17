@@ -9,8 +9,8 @@
 <body>
     <div class="search-container">
         <h1 id="logo">osearch</h1>
-        <form id="searchForm">
-            <input type="text" id="searchBox" placeholder="Type your query...">
+        <form id="searchForm" autocomplete="off">
+            <input type="text" id="searchBox" placeholder="Type your query..." autofocus>
             <button type="submit" id="searchButton">GO!!!</button>
             <select id="searchEngine">
                 <option value="https://www.google.com/search?q=">Google</option>
@@ -18,7 +18,7 @@
                 <option value="https://www.bing.com/search?q=">Bing</option>
                 <option value="https://search.yahoo.com/search?p=">Yahoo</option>
                 <option value="https://searx.be/search?q=">Searx</option>
-                <option value="https://yandex.com/search/?text=">Yandex</option> 
+                <option value="https://yandex.com/search/?text=">Yandex</option>
                 <option value="https://search.brave.com/search?q=">Brave Search</option>
                 <option value="https://www.baidu.com/s?wd=">Baidu</option>
             </select>
