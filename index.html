@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>osearch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1 id="logo">osearch</h1>
+        <form id="searchForm">
+            <input type="text" id="searchBox" placeholder="Type your query...">
+            <button type="submit" id="searchButton">GO!!!</button>
+            <select id="searchEngine">
+                <option value="https://www.google.com/search?q=">Google</option>
+                <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+                <option value="https://www.bing.com/search?q=">Bing</option>
+                <option value="https://search.yahoo.com/search?p=">Yahoo</option>
+                <option value="https://searx.be/search?q=">Searx</option>
+                <option value="https://yandex.com/search/?text=">Yandex</option>
+                <option value="https://search.brave.com/search?q=">Brave Search</option>
+                <option value="https://www.baidu.com/s?wd=">Baidu</option>
+            </select>
+        </form>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
