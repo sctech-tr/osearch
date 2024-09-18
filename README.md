@@ -33,4 +33,5 @@ set it as new tab:
 yay!! you now can use osearch
 
 ## screenshot
-![screenshot](https://github.com/user-attachments/assets/7d5b5aa7-e3cf-4c2a-8488-95416eede01b)
+![screenshot](https://github.com/user-attachments/assets/198dd9d1-33dd-41ca-84c6-2de15bea1a5e)
+
