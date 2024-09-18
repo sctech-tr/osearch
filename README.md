@@ -12,7 +12,7 @@ search engines available:
 - brave search
 - baidu
 ## is there a dark mode?
-it sure does!
+there is! it even remembers your choice.
 ## how do i use it?
 website: https://search.sctech.mooo.com
 
