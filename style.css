@@ -1,78 +1,85 @@
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.search-container {
+/* Container styling */
+.container {
     text-align: center;
-    padding: 50px;
 }
 
-#logo {
-    font-size: 2.5em;
+/* Title styling */
+h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
-    color: #6495ED; /* Changed logo color */
+    color: #80aaff; /* Blue color for "osearch" */
 }
 
-#searchForm {
-    display: inline-block;
+/* Search form styling */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-#searchBox {
-    padding: 10px;
-    font-size: 1em;
+/* Input box styling */
+input[type="text"] {
     width: 300px;
-    margin-right: 10px;
-}
-
-#searchButton {
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #6495ED; /* Changed button color */
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#searchButton:hover {
-    background-color: #558EDB; /* Slightly darker shade on hover */
-}
-
-#searchEngine {
     padding: 10px;
-    font-size: 1em;
-    margin-left: 10px;
+    border: 2px solid #666;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
 }
 
-#darkModeToggle {
+/* Search button styling */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #80aaff; /* Button background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #4d94ff; /* Lighter blue on hover */
+}
+
+/* Dropdown styling */
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #666;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* Toggle Dark Mode button styling */
+#toggleDarkMode {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #6495ED; /* Changed toggle button color */
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#darkModeToggle:hover {
-    background-color: #558EDB; /* Slightly darker shade on hover */
-}
-
-.dark-mode {
     background-color: #333;
-    color: white;
+    color: #fff;
+    border: 2px solid #666;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.dark-mode input, .dark-mode select {
-    background-color: #444;
-    color: white;
-}
-
-.dark-mode button {
-    background-color: #6495ED;
+#toggleDarkMode:hover {
+    background-color: #444; /* Slightly lighter on hover */
 }
