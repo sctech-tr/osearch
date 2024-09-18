@@ -13,7 +13,7 @@ body {
 }
 
 /* Container styling */
-.container {
+.search-container {
     text-align: center;
 }
 
@@ -70,7 +70,7 @@ select {
 }
 
 /* Toggle Dark Mode button styling */
-#toggleDarkMode {
+#darkModeToggle {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #333;
@@ -80,6 +80,6 @@ select {
     cursor: pointer;
 }
 
-#toggleDarkMode:hover {
+#darkModeToggle:hover {
     background-color: #444; /* Slightly lighter on hover */
 }

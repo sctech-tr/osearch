@@ -1,20 +1,20 @@
 // Dark mode toggle functionality
-const toggleDarkModeBtn = document.getElementById('toggleDarkMode');
+const darkModeToggle = document.getElementById('darkModeToggle');
 const searchEngineSelect = document.getElementById('engine');
 let isDarkMode = true;
 
 // Toggle dark mode
-toggleDarkModeBtn.addEventListener('click', () => {
+darkModeToggle.addEventListener('click', () => {
     if (isDarkMode) {
         document.body.style.backgroundColor = '#fff';
         document.body.style.color = '#000';
-        toggleDarkModeBtn.style.backgroundColor = '#ddd';
-        toggleDarkModeBtn.style.color = '#000';
+        darkModeToggle.style.backgroundColor = '#ddd';
+        darkModeToggle.style.color = '#000';
     } else {
         document.body.style.backgroundColor = '#121212';
         document.body.style.color = '#fff';
-        toggleDarkModeBtn.style.backgroundColor = '#333';
-        toggleDarkModeBtn.style.color = '#fff';
+        darkModeToggle.style.backgroundColor = '#333';
+        darkModeToggle.style.color = '#fff';
     }
     isDarkMode = !isDarkMode;
 });
@@ -35,9 +35,8 @@ searchEngineSelect.addEventListener('change', () => {
 // Search functionality
 document.getElementById('searchForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    const query = document.getElementById('query').value;
+    const query = document.getElementById('searchBox').value;
     const engine = document.getElementById('engine').value;
-
     let url = '';
 
     switch (engine) {
