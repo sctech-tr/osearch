@@ -1,4 +1,4 @@
-/* Initial dark mode state to prevent flickering */
+/* Initial dark mode state to prevent flickering */ 
 body {
     font-family: Arial, sans-serif;
     display: flex;
