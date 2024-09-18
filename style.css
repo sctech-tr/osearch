@@ -15,12 +15,11 @@ body {
 #logo {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #6495ED; /* Changed logo color */
 }
 
 #searchForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
 }
 
 #searchBox {
@@ -33,7 +32,7 @@ body {
 #searchButton {
     padding: 10px 20px;
     font-size: 1em;
-    background-color: #4CAF50;
+    background-color: #6495ED; /* Changed button color */
     color: white;
     border: none;
     cursor: pointer;
@@ -41,7 +40,7 @@ body {
 }
 
 #searchButton:hover {
-    background-color: #45a049;
+    background-color: #558EDB; /* Slightly darker shade on hover */
 }
 
 #searchEngine {
@@ -53,7 +52,7 @@ body {
 #darkModeToggle {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #6495ED; /* Changed toggle button color */
     color: white;
     border: none;
     cursor: pointer;
@@ -61,7 +60,7 @@ body {
 }
 
 #darkModeToggle:hover {
-    background-color: #555;
+    background-color: #558EDB; /* Slightly darker shade on hover */
 }
 
 .dark-mode {
@@ -75,5 +74,5 @@ body {
 }
 
 .dark-mode button {
-    background-color: #555;
+    background-color: #6495ED;
 }
