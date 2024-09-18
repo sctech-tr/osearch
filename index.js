@@ -1,51 +1,35 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const searchForm = document.getElementById("searchForm");
-    const searchBox = document.getElementById("searchBox");
-    const searchEngineSelect = document.getElementById("searchEngine");
-    const toggleButton = document.getElementById("darkModeToggle");
-    const body = document.body;
+document.addEventListener('DOMContentLoaded', function () {
+    const searchForm = document.getElementById('searchForm');
+    const searchBox = document.getElementById('searchBox');
+    const searchEngine = document.getElementById('searchEngine');
+    const darkModeToggle = document.getElementById('darkModeToggle');
 
-    // 1. Apply dark mode instantly before page render to avoid flickering
-    const darkMode = localStorage.getItem('darkMode');
-    if (darkMode === 'enabled') {
-        body.classList.add('dark-mode');
+    // Load dark mode preference from localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
     }
 
-    // 2. Focus the search box
-    searchBox.focus();
-
-    // 3. Load the previously selected search engine from localStorage
-    const savedSearchEngine = localStorage.getItem('searchEngine');
-    if (savedSearchEngine) {
-        searchEngineSelect.value = savedSearchEngine;
-    }
-
-    // 4. Toggle dark mode and save preference to localStorage
-    toggleButton.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-
-        if (body.classList.contains("dark-mode")) {
+    // Dark Mode Toggle
+    darkModeToggle.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode');
+        // Save preference to localStorage
+        if (document.body.classList.contains('dark-mode')) {
             localStorage.setItem('darkMode', 'enabled');
         } else {
-            localStorage.setItem('darkMode', 'disabled');
+            localStorage.removeItem('darkMode');
         }
     });
 
-    // 5. Save the selected search engine in localStorage
-    searchEngineSelect.addEventListener("change", function() {
-        localStorage.setItem('searchEngine', searchEngineSelect.value);
-    });
-
-    // 6. Handle form submission, open search in the current tab
-    searchForm.addEventListener("submit", function(e) {
-        e.preventDefault(); // Prevent the default form submission
-        
+    // Handle form submission
+    searchForm.addEventListener('submit', function (e) {
+        e.preventDefault();
         const query = searchBox.value.trim();
-        const engine = searchEngineSelect.value;
-
-        if (query) {
-            const searchUrl = engine + encodeURIComponent(query);
-            window.location.href = searchUrl; // Open results in the same tab
+        if (!query) {
+            alert('Please enter a search query.');
+            return;
         }
+        const engineURL = searchEngine.value;
+        const searchURL = engineURL + encodeURIComponent(query);
+        window.open(searchURL, '_blank');
     });
 });
