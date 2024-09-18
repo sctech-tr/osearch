@@ -1,4 +1,4 @@
-/* Light Mode Styles */
+/* Initial dark mode state to prevent flickering */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -10,6 +10,12 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Remaining styles */
 .search-container {
     text-align: center;
 }
@@ -52,12 +58,7 @@ body {
     cursor: pointer;
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
+/* Dark mode styles */
 body.dark-mode #logo {
     color: #8ab4f8;
 }
