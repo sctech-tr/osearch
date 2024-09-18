@@ -73,7 +73,7 @@ select {
 #darkModeToggle {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #80aaff; /* Button background color */
     color: #fff;
     border: 2px solid #666;
     border-radius: 5px;
