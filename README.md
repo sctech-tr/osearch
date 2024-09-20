@@ -1,8 +1,8 @@
 # osearch
 simple but nice new tab page
 ## what is it??
-it's a simple new tab page.  
-search engines available:
+it's a simple new tab page. 
+## search engines available:
 - google
 - duckduckgo
 - bing
@@ -11,8 +11,13 @@ search engines available:
 - yandex
 - brave search
 - baidu
-## is there a dark mode?
-there is! it even remembers your choice.
+## features:
+- dark mode
+- a variety of search engines
+- it remembers your preferred search engine
+- it remembers your theme
+- it's fast
+- the search results open in the same tab
 ## how do i use it?
 website: https://search.sctech.mooo.com
 
@@ -20,7 +25,7 @@ set it as new tab:
 
 ### firefox:
   
-  install <a href="https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/">this </a>and set the new tab to https://search.sctech.mooo.com  
+  install <a href="https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/">this </a>and set the new tab to https://search.sctech.mooo.com
     
 ### any chromium browser ever existed:  
   
