@@ -1,22 +1,31 @@
 // Dark mode toggle functionality
 const darkModeToggle = document.getElementById('darkModeToggle');
 const searchEngineSelect = document.getElementById('engine');
-let isDarkMode = true;
+let isDarkMode = localStorage.getItem('darkMode') === 'true';
 
-// Toggle dark mode
-darkModeToggle.addEventListener('click', () => {
-    if (isDarkMode) {
-        document.body.style.backgroundColor = '#fff';
-        document.body.style.color = '#000';
-        darkModeToggle.style.backgroundColor = '#ddd';
-        darkModeToggle.style.color = '#000';
-    } else {
+// Function to set dark mode
+function setDarkMode(isDark) {
+    if (isDark) {
         document.body.style.backgroundColor = '#121212';
         document.body.style.color = '#fff';
         darkModeToggle.style.backgroundColor = '#333';
         darkModeToggle.style.color = '#fff';
+    } else {
+        document.body.style.backgroundColor = '#fff';
+        document.body.style.color = '#000';
+        darkModeToggle.style.backgroundColor = '#ddd';
+        darkModeToggle.style.color = '#000';
     }
-    isDarkMode = !isDarkMode;
+    localStorage.setItem('darkMode', isDark);
+    isDarkMode = isDark;
+}
+
+// Set initial dark mode state
+setDarkMode(isDarkMode);
+
+// Toggle dark mode
+darkModeToggle.addEventListener('click', () => {
+    setDarkMode(!isDarkMode);
 });
 
 // Load preferred search engine on page load
@@ -38,7 +47,6 @@ document.getElementById('searchForm').addEventListener('submit', function (e) {
     const query = document.getElementById('searchBox').value;
     const engine = document.getElementById('engine').value;
     let url = '';
-
     switch (engine) {
         case 'google':
             url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
@@ -70,7 +78,6 @@ document.getElementById('searchForm').addEventListener('submit', function (e) {
         default:
             url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
     }
-
     // Open the search URL in a new tab
     if (query) {
         window.open(url, '_blank');
