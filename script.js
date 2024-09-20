@@ -78,8 +78,9 @@ document.getElementById('searchForm').addEventListener('submit', function (e) {
         default:
             url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
     }
-    // Open the search URL in a new tab
+    
+    // Redirect to the search results page
     if (query) {
-        window.open(url, '_blank');
+        window.location.href = url;
     }
 });
