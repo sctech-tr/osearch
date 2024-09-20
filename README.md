@@ -18,6 +18,8 @@ it's a simple new tab page.
 - it remembers your theme
 - it's fast
 - the search results open in the same tab
+- auto-focus the searchbar
+- enter key support
 ## how do i use it?
 website: https://search.sctech.mooo.com
 
