@@ -22,8 +22,13 @@
                 <option value="ecosia">Ecosia</option>
                 <option value="brave">Brave</option>
                 <option value="searx">Searx</option>
+                <option value="custom">Custom</option>
             </select>
-        </form>
+            <input type="text" id="customEngine" placeholder="Enter custom engine URL scheme..." style="display: none;">
+            <label id="saveCustomEngineContainer" style="display: none;">
+                <input type="checkbox" id="saveCustomEngine"> Save custom engine
+            </label>
+        </form>        
         <button id="darkModeToggle">Toggle Dark Mode</button>
     </div>
     <noscript>
