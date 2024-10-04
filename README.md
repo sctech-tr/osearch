@@ -4,13 +4,15 @@ simple but nice new tab page
 it's a simple new tab page. 
 ## search engines available:
 - google
-- duckduckgo
 - bing
+- duckduckgo
 - yahoo
-- searx
-- yandex
-- brave search
 - baidu
+- yandex
+- ecosia
+- brave search
+- searxng
+- custom!
 ## features:
 - dark mode
 - a variety of search engines
