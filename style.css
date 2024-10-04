@@ -12,6 +12,12 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Light mode styles (optional) */
+body.light-mode {
+    background-color: #fff; /* Light background */
+    color: #000; /* Dark text */
+}
+
 /* Container styling */
 .search-container {
     text-align: center;
@@ -82,4 +88,21 @@ select {
 
 #darkModeToggle:hover {
     background-color: #444; /* Slightly lighter on hover */
+}
+
+/* Custom search engine input styling */
+#customEngine {
+    width: 300px;
+    padding: 10px;
+    margin-left: 10px;
+    border: 2px solid #666;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#saveCustomEngineContainer {
+    margin-left: 10px;
+    color: #fff;
 }
