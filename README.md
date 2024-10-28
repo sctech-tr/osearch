@@ -23,21 +23,21 @@ it's a simple new tab page.
 - auto-focus the searchbar
 - enter key support
 ## how do i use it?
-website: https://search.sctech.mooo.com
+website: https://osearch.netlify.app
 
 set it as new tab:  
 
 ### firefox:
   
-  install <a href="https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/">this </a>and set the new tab to https://search.sctech.mooo.com
+  install <a href="https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/">this </a>and set the new tab to https://osearch.netlify.app
     
 ### any chromium browser ever existed:  
   
-  there is a setting for that. find it
+  there is a setting for that. find it and set to https://osearch.netlify.app
   
 ### safari:  
   
-  In the Safari settings, click the "Generals" tab and click on the drop-down menu next to the label "New tabs open with". After selecting "Homepage" from the drop-down menu, enter https://search.sctech.mooo.com in the "Homepage" input-field.
+  In the Safari settings, click the "Generals" tab and click on the drop-down menu next to the label "New tabs open with". After selecting "Homepage" from the drop-down menu, enter https://osearch.netlify.app in the "Homepage" input-field.
 
 yay!! you now can use osearch
 
